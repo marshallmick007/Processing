@@ -1,0 +1,4 @@
+To commit files
+
+git commit -a
+git push github master
