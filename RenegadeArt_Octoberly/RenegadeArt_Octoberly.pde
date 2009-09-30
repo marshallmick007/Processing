@@ -1,3 +1,6 @@
+// http://github.com/marshallmick007/Processing
+
+
 void setup() {
   size(200, 200);
   rectMode(CENTER);
@@ -17,10 +20,10 @@ void draw() {
   Club c = new Club();
   
   
-  d.display( x, x, 40 );
-  h.display( x * 4, x, 120 );
-  s.display( x, x * 4, 40 );
-  c.display( x * 4, x * 4, 40 );
+  d.display( x, x );
+  h.display( x * 4, x );
+  s.display( x, x * 4 );
+  c.display( x * 4, x * 4 );
  
 }
 
