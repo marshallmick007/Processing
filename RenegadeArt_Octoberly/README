@@ -2,3 +2,7 @@ To commit files
 
 git commit -a
 git push github master
+
+Resources:
+http://www.shiffman.net/teaching/nature/
+http://processing.org/learning/basics/inheritance.html
