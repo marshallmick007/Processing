@@ -40,13 +40,15 @@ class Heart extends Shape
 	void display( float x, float y )
 	{
 		fill(255, 0, 0);
-		//stroke(255, 0, 0);
+		
 		noStroke();
 		float r = (_size/4);
 		float c = 2*r;
 		float y1 = sin(PI/6) * r;
 		float x1 = cos(PI/6) * r;
+
 		arc(x - r, y, c, c, PI-PI/6, TWO_PI);
+
 		arc(x + r - 1, y, c, c, PI, TWO_PI+PI/6);
 		//ellipse(x - (s/4), y, s/2, s/2  );
 		//ellipse(x + (s/4), y, s/2, s/2  );
@@ -55,8 +57,9 @@ class Heart extends Shape
 		float bx = x + (r+x1);
 
 		triangle(ax, y + y1, x, y + (_size / 1.3), bx, y + y1 );
-
-		quad(ax, y + y1, x-r-(r/2), y, x+r+(r/2), y, bx, y + y1);
+		//stroke(0, 0, 0);
+		//quad(ax, y + y1, x-r-(r/2), y, x+r+(r/2), y, bx, y + y1);
+		quad(ax, y + y1 , x-r, y, x+r, y, bx, y + y1);
 	}
 }
 
